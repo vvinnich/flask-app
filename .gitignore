@@ -7,7 +7,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+.idea
 # Distribution / packaging
 .Python
 build/
@@ -355,7 +355,7 @@ csx/
 ecf/
 rcf/
 
-# Windows Store app package directories and files
+# Windows Store src package directories and files
 AppPackages/
 BundleArtifacts/
 Package.StoreAssociation.xml

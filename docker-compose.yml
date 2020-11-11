@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  app:
+    build: src
+    container_name: flask-gunicorn
+    restart: always
+    ports:
+      - "5000:5000"
+
+  nginx:
+    image: nginx:1.19.4
+    container_name: nginx
+    ports:
+      - "8043:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
