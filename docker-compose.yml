@@ -12,7 +12,7 @@ services:
     image: nginx:1.19.4
     container_name: nginx
     ports:
-      - "8043:80"
+      - "80:80"
     volumes:
       - ./nginx:/etc/nginx/conf.d
     depends_on:
